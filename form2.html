@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <h1 style="text-align:center">Form</h1>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Feedback</li>
+        </ul>
+    </div>
+<div class="container">
+
+    <form action="/action_page.php">
+        <fieldset>
+          <legend>Feedback Form:</legend><br>
+          <label for="name1">Name:</label><br>
+          <input type="text" id="name1" name="name1" value="Enter your Name"><br><br>
+          
+          <label for="email1">Email-ID:</label><br>
+          <input type="email" id="email1" name="email1" placeholder="Email ID"><br><br>
+    
+          <div class="sub">
+              
+            <label for="vol">Rate It:</label>
+            <input type="range" id="vol" name="vol" min="0" max="10"><br><br>
+
+            <label>Is this your first visit?</label><br><br>
+            <input type="radio" name="val1" id="val1"><span id="Yes">Yes</span>
+            <input type="radio" name="val2" id="val2"><span id="No">No</span><br><br>
+
+            <label>Where you able to find what you needed?</label><br><br>
+            <input type="radio" name="val1" id="val1"><span id="Yes">Yes</span>
+            <input type="radio" name="val2" id="val2"><span id="No">No</span><br><br>
+
+            <label>Comments:</label><br>
+            <textarea name="message" rows="9" cols="60">Comments</textarea><br><br>
+       
+          <label>Mobile Number:</label><br>
+          <input type="text" name="num" id="num" placeholder="eg:99880-09876" maxlength="10" required><br><br>
+        
+        <input type="button" onclick="alert('Submitted Successfully !!')" value="Click Me!">
+    </fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>
