@@ -1,0 +1,42 @@
+ /*Pseudo-class Elements*/
+ h1::before {
+    content: url("./images/download.png");
+  
+  }
+  /*Element Selector*/
+  h1{
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+  }
+  /*ID Selector*/
+  #page{
+    
+      width:960px;
+    margin: auto;
+    border: 2px solid gray;
+    padding: 25px;
+  }
+  /*Class Selector*/
+  .note {
+      background-color: lightgray;
+      padding:8px ;
+      border-radius: 3px;
+      color: gray;
+  }
+  /*Adjacent Sibiling Selector*/
+  h1 + p{
+      margin: 0;
+      text-shadow: gray;
+  }
+  /*General Sibling Selector*/
+  h3 ~ p{
+      font-style: italic;
+  }
+  /*Child Selector*/
+  #nav > li > a{
+      color:gray;
+  }
+ /*pseudo-class*/
+a.bg:hover {
+    color: #ff0000;
+  }
